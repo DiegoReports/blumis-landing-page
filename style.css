@@ -1,6 +1,7 @@
 /*============ GERAL ============= */
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,11 +18,22 @@
   --nav-heigth: 7.2rem;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.6rem;
 
   text-align: center;
+
+  overflow: overlay;
+}
+
+ul {
+  list-style: none;
 }
 
 .wrapper {
@@ -38,7 +50,7 @@ header {
 
 header::before {
   content: "";
-  width: 100vw;
+  width: 100%;
   height: calc(108rem + var(--nav-heigth)) ;
   background-color: var(--secondary-color);
   display: block;
@@ -187,7 +199,118 @@ nav.scroll h1 {
   background-image: url('./logo-blumis-white.svg');
 } */
 
-nav.scroll svg path {
+nav.scroll button path {
   stroke: white;
 }
 
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*============ MENU MOBILE ============= */
+body.menu-mobile {
+  overflow: hidden;
+}
+
+/* PSEUDO */
+body.menu-mobile > :not(nav) {
+  display: none;
+}
+
+.menu,
+.close-menu,
+body.menu-mobile .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-mobile .menu,
+body.menu-mobile .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-mobile .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: var(--nav-heigth);
+}
+
+body.menu-mobile nav {
+  position: relative;
+}
+
+.menu ul:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  margin-top: 6rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none ;
+}
+
+.menu .button {
+  background-color: #ffffff;
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: var(--primary-color);
+
+  display: inline-block;
+
+  padding: 1.6rem 3.2rem;
+
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+body.menu-mobile .logo,
+body.menu-mobile nav button {
+  position: relative;
+  z-index: 100;
+}
+
+/*  LOGOMARCA BLUMIS (H1) */
+body.menu-mobile .logo h1 {
+  color: white;
+  font-family: 'Corinthia', cursive;
+  font-size: 3.6rem;
+}
+
+body.menu-mobile button path {
+  stroke: white;
+}
+
+
+/* 
+body.menu-mobile .logo h1 {
+  position: relative;
+  z-index: 1001;
+} */

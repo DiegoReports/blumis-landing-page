@@ -5,3 +5,11 @@ function onScroll() {
     navigation.classList.remove('scroll')
   }
 }
+
+function openMenu() {
+  document.body.classList.add('menu-mobile')
+}
+
+function closeMenu() {
+  document.body.classList.remove('menu-mobile')
+}
