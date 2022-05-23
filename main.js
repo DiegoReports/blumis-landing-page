@@ -1,7 +1,7 @@
 function onScroll() {
-  navigation.clasList.add('scroll')
-
-  if () {
-
+  if (scrollY > 0) {
+    navigation.classList.add('scroll')
+  } else {
+    navigation.classList.remove('scroll')
   }
 }
