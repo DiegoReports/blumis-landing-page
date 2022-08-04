@@ -18,17 +18,17 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body onscroll="onScroll()" class="">
-    <nav id="navigation" class="">
+  <body onscroll="onScroll()">
+    <nav class="" id="nav">
       <div class="wrapper">
-        <a class="logo" href="#">
+        <a class="logo" href="#home">
           <h1>Blumis</h1>
         </a>
 
         <div class="menu">
           <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Serviços</a></li>
+            <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
+            <li><a onclick="closeMenu()" href="#services">Produtos</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Depoimentos</a></li>
           </ul>
@@ -168,7 +168,7 @@
         </button>
       </div>
     </nav>
-    <header class="wrapper">
+    <header id="home" class="wrapper">
       <h4>BEM VINDA À BLUMIS 👋</h4>
       <h1>O lugar onde você vai encontrar elegância e modéstia.</h1>
 
@@ -216,6 +216,98 @@
         </div>
       </div>
     </header>
+
+    <section id="services">
+      <div class="wrapper">
+        <header>
+          <h4>Vestidos</h4>
+          <h2>Como podemos ajudá-la encontrar o vestido ideal?</h2>
+        </header>
+
+        <div class="cards">
+          <div class="card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="12" fill="hsl(333, 49%, 82%)" />
+              <path
+                d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001"
+                stroke="hsl(328, 82%, 38%)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h3>Variedade</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              libero facere, earum doloremque atque aspernatur, delectus ducimus
+              quasi eaque velit voluptatem nihil praesentium ipsum in iusto est
+              perferendis accusantium rem?
+            </p>
+          </div>
+
+          <div class="card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="12" fill="hsl(333, 49%, 82%)" />
+              <path
+                d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001"
+                stroke="hsl(328, 82%, 38%)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h3>Variedade</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              libero facere, earum doloremque atque aspernatur, delectus ducimus
+              quasi eaque velit voluptatem nihil praesentium ipsum in iusto est
+              perferendis accusantium rem?
+            </p>
+          </div>
+
+          <div class="card">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="12" fill="hsl(333, 49%, 82%)" />
+              <path
+                d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001"
+                stroke="hsl(328, 82%, 38%)"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <h3>Variedade</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              libero facere, earum doloremque atque aspernatur, delectus ducimus
+              quasi eaque velit voluptatem nihil praesentium ipsum in iusto est
+              perferendis accusantium rem?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="./main.js"></script>
   </body>
