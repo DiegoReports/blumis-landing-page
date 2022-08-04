@@ -55,7 +55,6 @@ section {
 }
 
 /*============ HOME ============= */
-
 #home {
   padding-top: calc(4.1rem + var(--nav-heigth)) ;
 }
