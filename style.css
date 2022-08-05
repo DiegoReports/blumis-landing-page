@@ -176,6 +176,8 @@ nav {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  z-index: 100;
 }
 
 nav h1 {
@@ -237,10 +239,15 @@ body.menu-mobile .open-menu {
   visibility: hidden;
 }
 
+.close-menu {
+  display: none;
+}
+
 body.menu-mobile .menu,
 body.menu-mobile .close-menu {
   opacity: 1;
   visibility: visible;
+  display: block;
 }
 
 .menu {
