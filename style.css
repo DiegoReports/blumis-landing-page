@@ -7,11 +7,11 @@
 
 :root {
   font-size: 62.5%;
-  --primary-color:	hsl(328, 82%, 38%);
-  --secondary-color: 	hsl(333, 49%, 82%);
+  --primary-color: hsl(328, 82%, 38%);
+  --secondary-color: hsl(333, 49%, 82%);
   --light-color: hsl(3, 68%, 94%);
   --light-border: hsl(5, 20%, 89%);
-  --strong-color: 	hsl(325, 83%, 21%);
+  --strong-color: hsl(325, 83%, 21%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsla(210, 9%, 31%);
 
@@ -24,7 +24,8 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
 }
@@ -44,8 +45,46 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 section {
   padding-block: 10rem;
+}
+
+section header h4 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 1.6rem;
+
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+
+  text-transform: uppercase;
+}
+
+section header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  color: var(--headline);
+}
+
+section header h1 {
+  font-size: 3.4rem;
+  color: var(--headline);
+  line-height: 130%;
+
+  margin-bottom: 2.4rem;
+}
+
+section .content p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+
+  color: var(--paragraph);
 }
 
 .wrapper {
@@ -54,15 +93,176 @@ section {
   padding-inline: 2.4rem;
 }
 
+/*============ NAV ============= */
+
+nav {
+  display: flex;
+  height: var(--nav-heigth);
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  z-index: 100;
+}
+
+nav h1 {
+  color: var(--primary-color);
+  font-family: 'Corinthia', cursive;
+  font-size: 3.6rem;
+}
+
+nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav.scroll {
+  background-color: var(--primary-color);
+  transition: 1s ease-in-out;
+}
+
+nav.scroll h1 {
+  color: white;
+  font-family: 'Corinthia', cursive;
+  font-size: 3.6rem;
+}
+
+.logo {
+  text-decoration: none;
+}
+
+/* nav.scroll img {
+  background-image: url('./logo-blumis-white.svg');
+} */
+
+nav.scroll button path {
+  stroke: white;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*============ MENU MOBILE ============= */
+body.menu-mobile {
+  overflow: hidden;
+}
+
+/* PSEUDO */
+body.menu-mobile> :not(nav) {
+  visibility: hidden;
+}
+
+.menu,
+.close-menu,
+body.menu-mobile .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.close-menu {
+  display: none;
+}
+
+body.menu-mobile .menu,
+body.menu-mobile .close-menu {
+  opacity: 1;
+  visibility: visible;
+  display: block;
+}
+
+.menu {
+  transform: translateY(100%);
+}
+
+body.menu-mobile .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: var(--nav-heigth);
+
+  transition: transform 300ms;
+  transform: translateY(0);
+}
+
+.menu ul:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  margin-top: 6rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu .button {
+  background-color: #ffffff;
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: var(--primary-color);
+
+  display: inline-block;
+
+  padding: 1.6rem 3.2rem;
+
+  margin-top: 4.8rem;
+  margin-bottom: 8rem;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+body.menu-mobile .logo,
+body.menu-mobile nav button {
+  position: relative;
+  z-index: 100;
+}
+
+/*  LOGOMARCA BLUMIS (H1) */
+body.menu-mobile .logo h1 {
+  color: white;
+  font-family: 'Corinthia', cursive;
+  font-size: 3.6rem;
+}
+
+body.menu-mobile button path {
+  stroke: white;
+}
+
 /*============ HOME ============= */
 #home {
-  padding-top: calc(4.1rem + var(--nav-heigth)) ;
+  padding-top: calc(4.1rem + var(--nav-heigth));
 }
 
 #home::before {
   content: "";
   width: 100%;
-  height: calc(108rem + var(--nav-heigth)) ;
+  height: calc(108rem + var(--nav-heigth));
   background-color: var(--secondary-color);
   display: block;
 
@@ -70,20 +270,6 @@ section {
   top: 0;
   left: 0;
   z-index: -1;
-}
-
-#home h4 {
-  font-size: 1.4rem;
-  color: var(--primary-color);
-  margin-bottom: 1.6rem;
-}
-
-#home h1 {
-  font-size: 3.4rem;
-  color: var(--headline);
-  line-height: 130%;
-
-  margin-bottom: 2.4rem;
 }
 
 #home p {
@@ -166,209 +352,47 @@ section {
   line-height: 150%;
 }
 
-/*============ NAV ============= */
 
-nav {
-  display: flex;
-  height: var(--nav-heigth);
 
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+/*=========== SERVICES ============= */
 
-  z-index: 100;
-}
-
-nav h1 {
-  color: var(--primary-color);
-  font-family: 'Corinthia', cursive;
-  font-size: 3.6rem;
-}
-
-nav .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav.scroll {
-  background-color: var(--primary-color);
-  width: 100vw;
-  transition: 1s ease-in-out;
-}
-
-nav.scroll h1 {
-  color: white;
-  font-family: 'Corinthia', cursive;
-  font-size: 3.6rem;
-}
-
-.logo {
-  text-decoration: none;
-}
-
-/* nav.scroll img {
-  background-image: url('./logo-blumis-white.svg');
-} */
-
-nav.scroll button path {
-  stroke: white;
-}
-
-nav button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/*============ MENU MOBILE ============= */
-body.menu-mobile {
-  overflow: hidden;
-}
-
-/* PSEUDO */
-body.menu-mobile > :not(nav) {
-  display: none;
-}
-
-.menu,
-.close-menu,
-body.menu-mobile .open-menu {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.close-menu {
-  display: none;
-}
-
-body.menu-mobile .menu,
-body.menu-mobile .close-menu {
-  opacity: 1;
-  visibility: visible;
-  display: block;
-}
-
-.menu {
-  transform: translateY(100%);
-}
-
-body.menu-mobile .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: var(--primary-color);
-
-  width: 100vw;
-  height: 100vh;
-
-  padding-top: var(--nav-heigth);
-
-  transition: transform 300ms;
-  transform: translateY(0);
-}
-
-body.menu-mobile nav {
-  position: relative;
-}
-
-.menu ul:nth-child(1) {
-  display: flex;
-  flex-direction: column;
-  gap: 4.8rem;
-
-  margin-top: 6rem;
-
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 3.1rem;
-}
-
-.menu ul li a {
-  color: white;
-  text-decoration: none ;
-}
-
-.menu .button {
-  background-color: #ffffff;
-  border-radius: 4rem;
-  font-weight: 700;
-  font-size: 1.8rem;
-  line-height: 2.3rem;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  color: var(--primary-color);
-
-  display: inline-block;
-
-  padding: 1.6rem 3.2rem;
-
-  margin-top: 4.8rem;
-  margin-bottom: 8rem;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3.2rem;
-}
-
-body.menu-mobile .logo,
-body.menu-mobile nav button {
-  position: relative;
-  z-index: 100;
-}
-
-/*  LOGOMARCA BLUMIS (H1) */
-body.menu-mobile .logo h1 {
-  color: white;
-  font-family: 'Corinthia', cursive;
-  font-size: 3.6rem;
-}
-
-body.menu-mobile button path {
-  stroke: white;
-}
-
- /*=========== SERVICES ============= */
- #services header h4 {
-   font-size: 1.4rem;
-   line-height: 150%;
-
-   letter-spacing: 0.08rem;
-
-   color: var(--primary-color);
-
-   text-transform: uppercase;
-
-   margin-bottom: 1.6rem;
- }
-
- #services .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
- }
-
- #services header h2 {
-  font-size: 3rem;
-  line-height: 3.9rem;
-  color: var(--headline);
-
+#services header h2 {
   margin-bottom: 6rem;
- }
+}
 
- .card {
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.card {
   padding: 2.4rem;
   text-align: left;
   border: 1px solid var(--light-border);
   border-radius: .6rem;
   background-color: white;
- }
+}
 
- #services .card h3 {
+#services .card h3 {
   margin-block: 1.6rem;
- }
+}
+
+/*=========== ABOUT ============= */
+#about {
+  text-align: left;
+  background-color: var(--light-color);
+}
+
+#about header h2 {
+  margin-bottom: 2.4rem;
+}
+
+#about .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
+}
+
+#about img {
+  border-radius: 2rem;
+}
