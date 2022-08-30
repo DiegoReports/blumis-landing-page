@@ -1,346 +1,416 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BLUMIS | Moda Modesta</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body onscroll="onScroll()">
-    <nav class="" id="nav">
-      <div class="wrapper">
-        <a class="logo" href="#home">
-          <!-- <img src="./assets/logo-blumis-white.svg" alt="" /> -->
-          <h1>Blumis</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BLUMIS | Moda Modesta</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onscroll="onScroll()">
+  <nav class="" id="nav">
+    <div class="wrapper">
+      <a class="logo" href="#home">
+        <!-- <img src="./assets/logo-blumis-white.svg" alt="" /> -->
+        <h1>Blumis</h1>
+      </a>
+
+      <div class="menu">
+        <ul>
+          <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
+          <li><a onclick="closeMenu()" href="#services">Produtos</a></li>
+          <li><a onclick="closeMenu()" href="#about" href="#">Sobre</a></li>
+          <li><a href="#">Depoimentos</a></li>
+        </ul>
+
+        <a class="button" href="#">Comprar agora</a>
+
+        <ul class="social-links">
+          <li>
+            <a href="#" target="_blank">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                  stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                  stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                  stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z"
+                  fill="white" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="hsl(328, 82%, 38%)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="hsl(328, 82%, 38%)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="hsl(328, 82%, 38%)" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+
+      <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <section id="home">
+    <div class="wrapper">
+      <header>
+        <h4>BEM VINDA À BLUMIS 👋</h4>
+        <h1>O lugar onde você vai encontrar elegância e modéstia.</h1>
+      </header>
+
+      <div class="content">
+        <p>
+          Os modelos da Blumis vão além dos que os olhos podem ver. Por que o
+          mais importante não só estar <strong>bem vestida</strong>, mas sim
+          estar <strong>bem consigo mesma</strong>.
+        </p>
+
+        <a class="button" href="#contact">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z"
+              fill="white" />
+          </svg>
+          Comprar agora
         </a>
 
-        <div class="menu">
-          <ul>
-            <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
-            <li><a onclick="closeMenu()" href="#services">Produtos</a></li>
-            <li><a onclick="closeMenu()" href="#about" href="#">Sobre</a></li>
-            <li><a href="#">Depoimentos</a></li>
-          </ul>
+        <img src="./assets/Banner-blumis.png" alt="Mulher vestindo moletom verde e sorrindo" />
+      </div>
 
-          <a class="button" href="#">Comprar agora</a>
-
-          <ul class="social-links">
-            <li>
-              <a href="#" target="_blank">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
-                    stroke="#FFFAF1"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
-                    stroke="#FFFAF1"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
-                    stroke="#FFFAF1"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M17.5 6.49997H17.51"
-                    stroke="#FFFAF1"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z"
-                    fill="white"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
+      <div class="stats">
+        <div class="stat">
+          <h3>Modelos exclusivos</h3>
+          <p>Confecção própria</p>
         </div>
 
-        <button
-          aria-expanded="false"
-          aria-label="Abrir menu"
-          onclick="openMenu()"
-          class="open-menu"
-        >
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M10 20H30"
-              stroke="hsl(328, 82%, 38%)"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M10 12H30"
-              stroke="hsl(328, 82%, 38%)"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M18 28L30 28"
-              stroke="hsl(328, 82%, 38%)"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
+        <div class="stat">
+          <h3>P ao G1</h3>
+          <p>Vários tamanhos Disponíveis</p>
+        </div>
 
-        <button
-          aria-expanded="true"
-          aria-label="Fechar menu"
-          onclick="closeMenu()"
-          class="close-menu"
-        >
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M30 10L10 30M10 10L30 30"
-              stroke="#FFFAF1"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </button>
+        <div class="stat">
+          <h3>+10</h3>
+          <p>Anos no Mercado</p>
+        </div>
       </div>
-    </nav>
-    <section id="home">
-      <div class="wrapper">
-        <header>
-          <h4>BEM VINDA À BLUMIS 👋</h4>
-          <h1>O lugar onde você vai encontrar elegância e modéstia.</h1>
-        </header>
+    </div>
+  </section>
 
-        <div class="content">
-          <p>
-            Os modelos da Blumis vão além dos que os olhos podem ver. Por que o
-            mais importante não só estar <strong>bem vestida</strong>, mas sim
-            estar <strong>bem consigo mesma</strong>.
-          </p>
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h4>Vestidos</h4>
+        <h2>Como podemos ajudá-la encontrar o vestido ideal?</h2>
+      </header>
 
-          <button>
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="hsl(333, 49%, 82%)" />
+              <path d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001" stroke="hsl(328, 82%, 38%)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Variedade</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              libero facere, earum doloremque atque aspernatur, delectus
+              ducimus quasi eaque velit voluptatem nihil praesentium ipsum in
+              iusto est perferendis accusantium rem?
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="hsl(333, 49%, 82%)" />
+              <path d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001" stroke="hsl(328, 82%, 38%)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Elegância</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              libero facere, earum doloremque atque aspernatur, delectus
+              ducimus quasi eaque velit voluptatem nihil praesentium ipsum in
+              iusto est perferendis accusantium rem?
+            </p>
+          </div>
+
+          <div class="card">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="12" fill="hsl(333, 49%, 82%)" />
+              <path d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001" stroke="hsl(328, 82%, 38%)" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
+            <h3>Qualidade</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              libero facere, earum doloremque atque aspernatur, delectus
+              ducimus quasi eaque velit voluptatem nihil praesentium ipsum in
+              iusto est perferendis accusantium rem?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrapper">
+      <header>
+        <h4>Sobre a Blumis</h4>
+        <h2>Como surgiu a ideia</h2>
+      </header>
+
+      <div class="content">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Perferendis ut ab dolore molestiae totam. Quod, deserunt suscipit
+          exercitationem, atque dignissimos porro sed ut, dicta voluptatem
+          minus delectus illo voluptatum cupiditate?
+        </p>
+
+        <img src="./assets/sobre-a-blumis.jpg" alt="Sobre a Blumis" />
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrapper">
+      <header>
+        <h2>Entre em contato conosco!</h2>
+      </header>
+
+      <div class="content">
+        <ul>
+          <li>
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px" y="0px" viewBox="0 0 474 474" style="enable-background:new 0 0 474 474;" xml:space="preserve">
+              <g>
+                <path d="M437.5,59.3h-401C16.4,59.3,0,75.7,0,95.8v282.4c0,20.1,16.4,36.5,36.5,36.5h401c20.1,0,36.5-16.4,36.5-36.5V95.8
+      C474,75.7,457.6,59.3,437.5,59.3z M432.2,86.3L239.5,251.1L46.8,86.3H432.2z M447,378.2c0,5.2-4.3,9.5-9.5,9.5h-401
+      c-5.2,0-9.5-4.3-9.5-9.5V104.9l203.7,174.2c0.1,0.1,0.3,0.2,0.4,0.3c0.1,0.1,0.3,0.2,0.4,0.3c0.3,0.2,0.5,0.4,0.8,0.5
+      c0.1,0.1,0.2,0.1,0.3,0.2c0.4,0.2,0.8,0.4,1.2,0.6c0.1,0,0.2,0.1,0.3,0.1c0.3,0.1,0.6,0.3,1,0.4c0.1,0,0.3,0.1,0.4,0.1
+      c0.3,0.1,0.6,0.2,0.9,0.2c0.1,0,0.3,0.1,0.4,0.1c0.3,0.1,0.7,0.1,1,0.2c0.1,0,0.2,0,0.3,0c0.4,0,0.9,0.1,1.3,0.1l0,0l0,0
+      c0.4,0,0.9,0,1.3-0.1c0.1,0,0.2,0,0.3,0c0.3,0,0.7-0.1,1-0.2c0.1,0,0.3-0.1,0.4-0.1c0.3-0.1,0.6-0.2,0.9-0.2c0.1,0,0.3-0.1,0.4-0.1
+      c0.3-0.1,0.6-0.2,1-0.4c0.1,0,0.2-0.1,0.3-0.1c0.4-0.2,0.8-0.4,1.2-0.6c0.1-0.1,0.2-0.1,0.3-0.2c0.3-0.2,0.5-0.3,0.8-0.5
+      c0.1-0.1,0.3-0.2,0.4-0.3c0.1-0.1,0.3-0.2,0.4-0.3L447,109.2V378.2z" />
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+            </svg>
+
+            <a href="mailto:atendimento.blumis@gmail.com">atendimento.blumis@gmail.com</a>
+          </li>
+          <li>
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 551.034 551.034"
+              style="enable-background:new 0 0 551.034 551.034;" xml:space="preserve">
+              <g id="XMLID_13_">
+
+                <linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.5714" x2="275.517"
+                  y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+                  <stop offset="0" style="stop-color:hsl(328, 82%, 38%)" />
+                  <stop offset="0.3" style="stop-color:hsl(328, 82%, 38%)" />
+                  <stop offset="0.6" style="stop-color:hsl(328, 82%, 38%)" />
+                  <stop offset="1" style="stop-color:hsl(328, 82%, 38%)" />
+                </linearGradient>
+                <path id="XMLID_17_" style="fill:url(#XMLID_2_);" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+                    c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+                    C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+                    c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+                    c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+
+                <linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="275.517" y1="4.5714" x2="275.517"
+                  y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+                  <stop offset="0" style="stop-color:hsl(328, 82%, 38%)" />
+                  <stop offset="0.3" style="stop-color:hsl(328, 82%, 38%)" />
+                  <stop offset="0.6" style="stop-color:hsl(328, 82%, 38%)" />
+                  <stop offset="1" style="stop-color:hsl(328, 82%, 38%)" />
+                </linearGradient>
+                <path id="XMLID_81_" style="fill:url(#XMLID_3_);" d="M275.517,133C196.933,133,133,196.933,133,275.516
+                    s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6
+                    c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083
+                    C362.6,323.611,323.611,362.6,275.517,362.6z" />
+
+                <linearGradient id="XMLID_4_" gradientUnits="userSpaceOnUse" x1="418.306" y1="4.5714" x2="418.306"
+                  y2="549.7202" gradientTransform="matrix(1 0 0 -1 0 554)">
+                  <stop offset="0" style="stop-color:hsl(328, 82%, 38%)" />
+                  <stop offset="0.3" style="stop-color:hsl(328, 82%, 38%)" />
+                  <stop offset="0.6" style="stop-color:hsl(328, 82%, 38%)" />
+                  <stop offset="1" style="stop-color:hsl(328, 82%, 38%)" />
+                </linearGradient>
+                <circle id="XMLID_83_" style="fill:url(#XMLID_4_);" cx="418.306" cy="134.072" r="34.149" />
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+              <g>
+              </g>
+            </svg>
+
+            <a href="#">@_blumis</a>
+          </li>
+        </ul>
+
+        <a class="button" href="https://wa.me/5511953579709" target="_blank">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z"
+              fill="white" />
+          </svg>
+          Comprar agora
+        </a>
+
+        <img src="/assets/dress.jpg" alt="mulher negra com vestido preto sorrindo">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <a class="logo" href="#home">
+        <img src="./assets/logotipo-blumis.png" alt="logotipo da marca Blumis moda modesta">
+      </a>
+      <ul class="social-links">
+        <li>
+          <a href="#" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
+                stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
+                stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z"
+                stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z"
-                fill="white"
-              />
+                fill="white" />
             </svg>
-            Comprar agora
-          </button>
+          </a>
+        </li>
+      </ul>
 
-          <img
-            src="./assets/Banner-blumis.png"
-            alt="Mulher vestindo moletom verde e sorrindo"
-          />
-        </div>
+    </div>
 
-        <div class="stats">
-          <div class="stat">
-            <h3>Modelos exclusivos</h3>
-            <p>Confecção própria</p>
-          </div>
+    <div class="infos">
+      <p>© 2022 Blumis. </br>
+        Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
 
-          <div class="stat">
-            <h3>P ao G1</h3>
-            <p>Vários tamanhos Disponíveis</p>
-          </div>
+  <!-- SCROLLREVEAL LIB -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-          <div class="stat">
-            <h3>+10</h3>
-            <p>Anos no Mercado</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <script src="./main.js"></script>
+</body>
 
-    <section id="services">
-      <div class="wrapper">
-        <header>
-          <h4>Vestidos</h4>
-          <h2>Como podemos ajudá-la encontrar o vestido ideal?</h2>
-        </header>
-
-        <div class="content">
-          <div class="cards">
-            <div class="card">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="12" r="12" fill="hsl(333, 49%, 82%)" />
-                <path
-                  d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001"
-                  stroke="hsl(328, 82%, 38%)"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <h3>Variedade</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                libero facere, earum doloremque atque aspernatur, delectus
-                ducimus quasi eaque velit voluptatem nihil praesentium ipsum in
-                iusto est perferendis accusantium rem?
-              </p>
-            </div>
-
-            <div class="card">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="12" r="12" fill="hsl(333, 49%, 82%)" />
-                <path
-                  d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001"
-                  stroke="hsl(328, 82%, 38%)"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <h3>Elegância</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                libero facere, earum doloremque atque aspernatur, delectus
-                ducimus quasi eaque velit voluptatem nihil praesentium ipsum in
-                iusto est perferendis accusantium rem?
-              </p>
-            </div>
-
-            <div class="card">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="12" cy="12" r="12" fill="hsl(333, 49%, 82%)" />
-                <path
-                  d="M17.091 8.18188L10.091 15.1819L6.90918 12.0001"
-                  stroke="hsl(328, 82%, 38%)"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <h3>Qualidade</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                libero facere, earum doloremque atque aspernatur, delectus
-                ducimus quasi eaque velit voluptatem nihil praesentium ipsum in
-                iusto est perferendis accusantium rem?
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <div class="wrapper">
-        <header>
-          <h4>Sobre a Blumis</h4>
-          <h2>Como surgiu a ideia</h2>
-        </header>
-
-        <div class="content">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Perferendis ut ab dolore molestiae totam. Quod, deserunt suscipit
-            exercitationem, atque dignissimos porro sed ut, dicta voluptatem
-            minus delectus illo voluptatum cupiditate?
-          </p>
-
-          <img src="./assets/sobre-a-blumis.jpg" alt="Sobre a Blumis" />
-        </div>
-      </div>
-    </section>
-
-    <!-- SCROLLREVEAL LIB -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script src="./main.js"></script>
-  </body>
 </html>
