@@ -87,6 +87,37 @@ section .content p {
   color: var(--paragraph);
 }
 
+.button {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 4rem;
+
+  margin-bottom: 6rem;
+
+  padding: 1.6rem 3.2rem;
+  width: fit-content;
+
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+
+  text-decoration: none;
+
+  transition: background .2s;
+}
+
+.button:hover {
+  background-color: var(--strong-color);
+}
+
 .wrapper {
   width: 37.5rem;
   margin-inline: auto;
@@ -272,6 +303,10 @@ body.menu-mobile button path {
   z-index: -1;
 }
 
+#home .button {
+  margin-inline: auto;
+}
+
 #home p {
   font-size: 1.8rem;
   line-height: 150%;
@@ -279,32 +314,6 @@ body.menu-mobile button path {
   color: var(--paragraph);
 
   margin-bottom: 3.2rem;
-}
-
-#home button {
-  background: var(--primary-color);
-  border: none;
-  border-radius: 4rem;
-
-  margin-bottom: 6rem;
-
-  height: 6.2rem;
-  width: 26.3rem;
-
-  color: #ffffff;
-
-  text-transform: uppercase;
-
-  font-size: 1.4rem;
-  font-weight: 700;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-
-  margin-right: auto;
-  margin-left: auto;
 }
 
 #home img {
@@ -395,4 +404,72 @@ body.menu-mobile button path {
 
 #about img {
   border-radius: 2rem;
+}
+
+/*=========== CONTACT ============= */
+#contact {
+  text-align: left;
+}
+
+#contact header {
+  margin-bottom: 3.2rem;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  margin-bottom: 3.2rem;
+}
+
+#contact li {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#contact ul li svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#contact ul li a {
+  text-decoration: none;
+  color: var(--paragraph);
+}
+
+/*=========== FOOTER ============= */
+footer {
+  background-color: var(--primary-color);
+  padding-block: 1.5rem;
+  text-align: center;
+
+  color: white;
+}
+
+footer .logo {
+  display: inline-block;
+  /*   margin-bottom: 2.4rem; */
+}
+
+footer .wrapper .logo img {
+  width: 20rem;
+  height: 20rem;
+}
+
+footer ul {
+  margin-bottom: 1.5rem;
+}
+
+footer .infos p {
+  color: var(--bg-light);
+  line-height: 1.5;
+
+  margin-top: 1.2rem;
+
+}
+
+footer .infos {
+  border-top: 1px solid #fff;
 }
