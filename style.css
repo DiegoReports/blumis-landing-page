@@ -261,6 +261,15 @@ body.menu-mobile .menu {
   margin-bottom: 8rem;
 }
 
+.menu .button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+
+  filter: drop-shadow(5px 5px 10px #000);
+
+
+}
+
 .social-links {
   display: flex;
   align-items: center;
@@ -472,4 +481,24 @@ footer .infos p {
 
 footer .infos {
   border-top: 1px solid #fff;
+}
+
+/*=========== BACK TO TOP ============= */
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
 }
