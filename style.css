@@ -300,13 +300,14 @@ body.menu-mobile button path {
 
 /*============ HOME ============= */
 #home {
+  padding-block: 0;
   padding-top: calc(4.1rem + var(--nav-heigth));
 }
 
 #home::before {
   content: "";
   width: 100%;
-  height: calc(108rem + var(--nav-heigth));
+  height: calc(70% + var(--nav-heigth));
   background-color: var(--secondary-color);
   display: block;
 
@@ -511,6 +512,14 @@ footer .infos {
 
 @media (min-width: 1024px) {
 /*=========== GERAL ============= */
+body {
+  overflow: auto;
+}
+
+section {
+  padding-block: 16rem;
+}
+
 .wrapper {
   width: min(112rem, 100%);
   display: grid;
@@ -650,6 +659,10 @@ footer .infos {
   }
 
 /*=========== HOME ============= */
+
+  #home::before {
+    height: calc(96% - var(--nav-heigth));
+  }
 
   #home {
     padding-top: var(--nav-heigth);
