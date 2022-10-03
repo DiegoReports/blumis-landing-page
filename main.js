@@ -1,10 +1,44 @@
 window.addEventListener('scroll', onScroll)
 
 onScroll()
-
 function onScroll() {
   showNavOnScroll()
   showBackToTopButtonOnScroll()
+
+  activateMenuAtCurrentSection(home)
+  activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(about)
+  activateMenuAtCurrentSection(contact)
+  activateMenuAtCurrentSection(services)
+}
+
+function activateMenuAtCurrentSection(section) {
+  const targetLine = scrollY + innerHeight / 2
+
+  // Acompanhamento de linha na seção
+  const sectionTop = section.offsetTop // TOPO
+  const sectionHeight = section.offsetHeight // ALTURA
+
+  // Topo da Seção chegou ou ultrapassou a linha alvo
+  const sectionTopReachOrPassedTargetline = targetLine >= sectionTop
+
+  // Verificando se a base esta abaixo da linha alvo
+  const sectionEndsAt = sectionTop + sectionHeight
+
+  // Fim da secao passou da linha alvo
+  const sectionAndPassedTargetLine = sectionEndsAt <= targetLine
+
+  // Limites da seção
+  const sectionBoundaries =
+    sectionTopReachOrPassedTargetline && !sectionAndPassedTargetLine
+
+  const sectionId = section.getAttribute('id')
+  const menuElement = document.querySelector(`.menu a[href*=${sectionId}]`)
+
+  menuElement.classList.remove('active')
+  if (sectionBoundaries) {
+    menuElement.classList.add('active')
+  }
 }
 
 function showNavOnScroll() {
