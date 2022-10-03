@@ -762,6 +762,10 @@ section header h2 {
     grid-template-columns: 1fr 33.5rem;
     grid-template-areas: 'A B';
   }
+  
+  #contact .wrapper img {
+    border-radius: 2rem;
+  }
 
   #contact .col-a {
     align-self: center;
@@ -791,8 +795,8 @@ section header h2 {
   }
 
   footer .wrapper .logo img {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
   }
 
 }
