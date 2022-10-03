@@ -11,6 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- SWIPER -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -27,7 +31,7 @@
           <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
           <li><a onclick="closeMenu()" href="#services">Produtos</a></li>
           <li><a onclick="closeMenu()" href="#about" href="#">Sobre</a></li>
-          <li><a onclick="closeMenu()" href="#">Depoimentos</a></li>
+          <li><a onclick="closeMenu()" href="#testimonials">Depoimentos</a></li>
           <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
         </ul>
 
@@ -275,6 +279,107 @@
     </div>
   </section>
 
+  <section class="section" id="testimonials">
+    <div class="wrapper">
+      <header>
+        <h4>Depoimentos</h4>
+        <h2>Oque dizem nossas BlumisGirls?</h2>
+      </header>
+      <div class="content">
+
+        <div class="testimonials swiper-container">
+          <div class="swiper-wrapper">
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque
+                </p>
+
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="Cliente Blumis satisfeita">
+                  Maria Silva
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque
+                </p>
+
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="Cliente Blumis satisfeita">
+                  Maria Silva
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque
+                </p>
+
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="Cliente Blumis satisfeita">
+                  Maria Silva
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque
+                </p>
+
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="Cliente Blumis satisfeita">
+                  Maria Silva
+                </cite>
+              </blockquote>
+            </div>
+
+            <div class="testimonial swiper-slide">
+              <blockquote>
+                <p>
+                  <span>&ldquo;</span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                  ipsam neque
+                </p>
+
+                <cite>
+                  <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="Cliente Blumis satisfeita">
+                  Maria Silva
+                </cite>
+              </blockquote>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
   <section id="contact">
     <div class="wrapper">
 
@@ -492,8 +597,11 @@
     </svg>
   </a>
 
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <!-- SCROLLREVEAL LIB -->
   <script src="https://unpkg.com/scrollreveal"></script>
+
 
   <script src="./main.js"></script>
 </body>
