@@ -7,6 +7,7 @@ function onScroll() {
 
   activateMenuAtCurrentSection(home)
   activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(testimonials)
   activateMenuAtCurrentSection(about)
   activateMenuAtCurrentSection(contact)
   activateMenuAtCurrentSection(services)
@@ -64,6 +65,26 @@ function openMenu() {
 function closeMenu() {
   document.body.classList.remove('menu-mobile')
 }
+
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  /*   loop: true, */
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev'
+  },
+  mousewheel: true,
+  keyboard: true,
+  breakpoints: {
+    767: {
+      slidesPerView: 2,
+      setWrapperSize: true
+    }
+  }
+})
 
 ScrollReveal({
   origin: 'top',
