@@ -270,8 +270,6 @@ body.menu-mobile .menu {
   color: #fff;
 
   filter: drop-shadow(5px 5px 10px #000);
-
-
 }
 
 .social-links {
@@ -401,6 +399,29 @@ body.menu-mobile button path {
   margin-block: 1.6rem;
 }
 
+/*=========== PRODUCTS ============= */
+
+#products {
+  background: #FBD3E9;
+  background: -webkit-linear-gradient(to top, hsl(333, 49%, 82%), #FBD3E9);
+  background: linear-gradient(to top, hsl(333, 49%, 82%), #FBD3E9);
+  padding-block: 5rem;
+}
+
+#products header h2 {
+  margin-bottom: 6rem;
+}
+
+#products #wave {
+  position: relative;
+  top: -5rem;
+}
+
+#products .content p {
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
+}
+
 /*=========== ABOUT ============= */
 #about {
   text-align: left;
@@ -427,7 +448,7 @@ body.menu-mobile button path {
 }
 
 #testimonials .wrapper .content {
-/*   margin-left: 0;
+  /*   margin-left: 0;
   margin-right: 0; */
   position: relative;
   overflow: hidden;
@@ -475,7 +496,7 @@ body.menu-mobile button path {
   margin-right: 1.5rem;
 }
 
-    /* SWIPER */
+/* SWIPER */
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
@@ -494,6 +515,7 @@ body.menu-mobile button path {
 .swiper-button-prev {
   color: var(--primary-color);
 }
+
 
 /*=========== CONTACT ============= */
 #contact {
@@ -586,34 +608,36 @@ footer .infos {
 /*=========== RESPONSIVE ============= */
 
 @media (min-width: 1024px) {
-/*=========== GERAL ============= */
-body {
-  overflow: auto;
-}
 
-section {
-  padding-block: 16rem;
-}
+  /*=========== GERAL ============= */
+  body {
+    overflow: auto;
+  }
 
-section header h2 {
-  font-size: 4rem;
-  line-height: 5.2rem;
-}
+  section {
+    padding-block: 16rem;
+  }
 
-.wrapper {
-  width: min(112rem, 100%);
-  display: grid;
-}
+  section header h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
 
-.col-a {
-  grid-area: A;
-}
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
 
-.col-b {
-  grid-area: B;
-}
-/*=========== NAVIGATION ============= */
-/*=========== reset ============= */
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+
+  /*=========== NAVIGATION ============= */
+  /*=========== reset ============= */
   nav#nav .wrapper * {
     margin: 0;
     padding: 0;
@@ -640,7 +664,7 @@ section header h2 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 66%;
   }
 
   nav#nav .logo h1 {
@@ -676,7 +700,7 @@ section header h2 {
 
   nav#nav .menu a.button:hover {
     background-color: var(--primary-color);
-    border:none;
+    border: none;
     color: #fff;
   }
 
@@ -746,7 +770,7 @@ section header h2 {
     border: none;
   }
 
-/*=========== HOME ============= */
+  /*=========== HOME ============= */
 
   #home::before {
     height: calc(96% - var(--nav-heigth));
@@ -755,11 +779,12 @@ section header h2 {
   #home {
     padding-top: var(--nav-heigth);
   }
+
   #home .wrapper {
     grid-template-columns: 60.5rem 1fr;
-    grid-template-areas: 
-    'A B'
-    'C C';
+    grid-template-areas:
+      'A B'
+      'C C';
   }
 
   #home .col-a {
@@ -783,7 +808,7 @@ section header h2 {
     gap: 0;
   }
 
-  #home .stats .stat + .stat {
+  #home .stats .stat+.stat {
     border-left: 1px solid var(--primary-color);
   }
 
@@ -802,7 +827,7 @@ section header h2 {
 
   /*=========== SERVICES ============= */
   #services h2 {
-    width: 47rem;
+    width: 42rem;
     margin-inline: auto;
   }
 
@@ -816,6 +841,20 @@ section header h2 {
     width: 30%;
     flex-grow: 1;
   }
+
+  /*=========== PRODUCTS ============= */
+
+  #products header {
+    max-width: 72rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #products #wave {
+    bottom: 16rem;
+  }
+
 
   /*=========== ABOUT ============= */
   #about .wrapper {
@@ -840,17 +879,12 @@ section header h2 {
     margin-right: auto;
   }
 
-  #testimonials .wrapper {
- 
-  }
-
-
   /*=========== CONTACT ============= */
   #contact .wrapper {
     grid-template-columns: 1fr 33.5rem;
     grid-template-areas: 'A B';
   }
-  
+
   #contact .wrapper img {
     border-radius: 2rem;
   }
@@ -865,9 +899,10 @@ section header h2 {
 
   /*=========== FOOTER ============= */
 
-  footer  {
+  footer {
     padding: 2rem 0
   }
+
   footer .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
@@ -886,5 +921,4 @@ section header h2 {
     width: 25rem;
     height: 25rem;
   }
-
 }

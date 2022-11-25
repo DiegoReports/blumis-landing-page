@@ -15,7 +15,12 @@
   <!-- SWIPER -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./my-slider.css" />
 </head>
 
 <body>
@@ -29,7 +34,8 @@
       <div class="menu">
         <ul>
           <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
-          <li><a onclick="closeMenu()" href="#services">Produtos</a></li>
+          <li><a onclick="closeMenu()" href="#services">Razões</a></li>
+          <li><a onclick="closeMenu()" href="#products">Produtos</a></li>
           <li><a onclick="closeMenu()" href="#about" href="#">Sobre</a></li>
           <li><a onclick="closeMenu()" href="#testimonials">Depoimentos</a></li>
           <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
@@ -39,7 +45,7 @@
 
         <ul class="social-links">
           <li>
-            <a href="#" target="_blank">
+            <a href="https://www.facebook.com/moda.blumis/" target="_blank">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M18 1.99997H15C13.6739 1.99997 12.4021 2.52675 11.4645 3.46444C10.5268 4.40212 10 5.67389 10 6.99997V9.99997H7V14H10V22H14V14H17L18 9.99997H14V6.99997C14 6.73475 14.1054 6.4804 14.2929 6.29286C14.4804 6.10533 14.7348 5.99997 15 5.99997H18V1.99997Z"
@@ -48,7 +54,8 @@
             </a>
           </li>
           <li>
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/_blumis/
+            " target="_blank">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z"
@@ -63,7 +70,7 @@
           </li>
           <li>
             <a href="#" target="_blank">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z"
                   fill="white" />
@@ -121,7 +128,7 @@
       </div>
 
       <div class="col-b">
-        <img src="./assets/Banner-blumis.png" alt="Mulher usando vestido Blumis" />
+        <img src="./assets/images/blumis-hero.png" alt="Mulher usando vestido Blumis" />
       </div>
 
       <div class="stats">
@@ -146,7 +153,7 @@
   <section id="services">
     <div class="wrapper">
       <header>
-        <h4>Vestidos</h4>
+        <h4>Ideal</h4>
         <h2>Como podemos ajudá-la encontrar o vestido ideal?</h2>
       </header>
 
@@ -252,6 +259,46 @@
     </div>
   </section>
 
+  <section id="products">
+    <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="hsl(323, 70%, 95%)" fill-opacity="1" d="M0,256L1440,96L1440,0L0,0Z"></path>
+    </svg>
+    <div class="wrapper">
+      <header>
+        <h4>Vestidos</h4>
+        <h2>Conheça alguns de nossos modelos exclusivos Blumis</h2>
+      </header>
+    </div>
+    <div class="ism-slider" data-transition_type="fade" data-radio_type="thumbnail" id="my-Newslider">
+      <ol>
+        <li>
+          <img src="./assets/images/antonela-2.jpg">
+          <!-- <div class="ism-caption ism-caption-0">Vestido Antonela</div> -->
+        </li>
+        <li>
+          <img src="./assets/images/antonela-1.png" alt="Vestido Blumis Antonela">
+        </li>
+        <li>
+          <img src="./assets/images/marcela-preto.png" alt="Vestido Blumis Marcela cor preta">
+        </li>
+        <li>
+          <img src="./assets/images/marcela-verde.png" alt="Vestido Blumis Marcela cor verde">
+        </li>
+        <li>
+          <img src="./assets/images/clarice-vestido.png" alt="Vestido Blumis Clarice cor preta">
+        </li>
+      </ol>
+    </div>
+
+    <div class="wrapper">
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi tenetur asperiores, exercitationem beatae rem
+          ratione laudantium aliquid nobis fugit excepturi officiis ea hic, deleniti, fuga repudiandae. Quae dicta
+          possimus odit.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="about">
     <div class="wrapper">
 
@@ -273,7 +320,7 @@
       </div>
 
       <div class="col-b">
-        <img src="./assets/sobre-a-blumis.jpg" alt="Sobre a Blumis" />
+        <img src="./assets/images/sobre-a-blumis.jpg" alt="Sobre a Blumis" />
       </div>
 
     </div>
@@ -315,8 +362,8 @@
                 </p>
 
                 <cite>
-                  <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="Cliente Blumis satisfeita">
-                  Maria Silva
+                  <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Cliente Blumis satisfeita">
+                  Lucia Oliveira
                 </cite>
               </blockquote>
             </div>
@@ -331,8 +378,8 @@
                 </p>
 
                 <cite>
-                  <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="Cliente Blumis satisfeita">
-                  Maria Silva
+                  <img src="https://randomuser.me/api/portraits/women/36.jpg" alt="Cliente Blumis satisfeita">
+                  Tamara Souza
                 </cite>
               </blockquote>
             </div>
@@ -347,14 +394,16 @@
                 </p>
 
                 <cite>
-                  <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="Cliente Blumis satisfeita">
-                  Maria Silva
+                  <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="Cliente Blumis satisfeita">
+                  Cinthia Alves
                 </cite>
               </blockquote>
             </div>
 
             <div class="testimonial swiper-slide">
               <blockquote>
+                <div class="stars">
+                </div>
                 <p>
                   <span>&ldquo;</span>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -363,8 +412,8 @@
                 </p>
 
                 <cite>
-                  <img src="https://randomuser.me/api/portraits/women/87.jpg" alt="Cliente Blumis satisfeita">
-                  Maria Silva
+                  <img src="https://randomuser.me/api/portraits/women/71.jpg" alt="Cliente Blumis satisfeita">
+                  Camila dos Santos
                 </cite>
               </blockquote>
             </div>
@@ -528,7 +577,7 @@
 
 
       <div class="col-b">
-        <img src="/assets/dress.jpg" alt="mulher negra com vestido preto sorrindo">
+        <img src="./assets/images/dress.jpg" alt="mulher negra com vestido preto sorrindo">
       </div>
 
 
@@ -540,7 +589,7 @@
 
       <div class="col-a">
         <a class="logo" href="#home">
-          <img src="./assets/logotipo-blumis.png" alt="logotipo da marca Blumis moda modesta">
+          <img src="./assets/images/logotipo-blumis.png" alt="logotipo da marca Blumis moda modesta">
         </a>
       </div>
 
@@ -571,7 +620,7 @@
           </li>
           <li>
             <a href="#" target="_blank">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M13.8337 11.6667C13.667 11.5833 12.5837 11.0833 12.417 11C12.2503 10.9167 12.0837 10.9167 11.917 11.0833C11.7503 11.25 11.417 11.75 11.2503 11.9167C11.167 12.0833 11.0003 12.0833 10.8337 12C10.2503 11.75 9.66699 11.4167 9.16699 11C8.75033 10.5833 8.33366 10.0833 8.00033 9.58334C7.91699 9.41668 8.00033 9.25001 8.08366 9.16668C8.16699 9.08334 8.25033 8.91668 8.41699 8.83334C8.50033 8.75001 8.58366 8.58334 8.58366 8.50001C8.66699 8.41668 8.66699 8.25001 8.58366 8.16668C8.50033 8.08334 8.08366 7.08334 7.91699 6.66668C7.83366 6.08334 7.66699 6.08334 7.50033 6.08334C7.41699 6.08334 7.25033 6.08334 7.08366 6.08334C6.91699 6.08334 6.66699 6.25001 6.58366 6.33334C6.08366 6.83334 5.83366 7.41668 5.83366 8.08334C5.91699 8.83334 6.16699 9.58334 6.66699 10.25C7.58366 11.5833 8.75033 12.6667 10.167 13.3333C10.5837 13.5 10.917 13.6667 11.3337 13.75C11.7503 13.9167 12.167 13.9167 12.667 13.8333C13.2503 13.75 13.7503 13.3333 14.0837 12.8333C14.2503 12.5 14.2503 12.1667 14.167 11.8333C14.167 11.8333 14.0003 11.75 13.8337 11.6667ZM15.917 4.08334C12.667 0.833344 7.41699 0.833344 4.16699 4.08334C1.50033 6.75001 1.00033 10.8333 2.83366 14.0833L1.66699 18.3333L6.08366 17.1667C7.33366 17.8333 8.66699 18.1667 10.0003 18.1667C14.5837 18.1667 18.2503 14.5 18.2503 9.91668C18.3337 7.75001 17.417 5.66668 15.917 4.08334ZM13.667 15.75C12.5837 16.4167 11.3337 16.8333 10.0003 16.8333C8.75033 16.8333 7.58366 16.5 6.50033 15.9167L6.25033 15.75L3.66699 16.4167L4.33366 13.9167L4.16699 13.6667C2.16699 10.3333 3.16699 6.16668 6.41699 4.08334C9.66699 2.00001 13.8337 3.08334 15.8337 6.25001C17.8337 9.50001 16.917 13.75 13.667 15.75Z"
                   fill="white" />
@@ -598,12 +647,14 @@
   </a>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/ism-min.js"></script>
 
   <!-- SCROLLREVEAL LIB -->
   <script src="https://unpkg.com/scrollreveal"></script>
 
 
-  <script src="./main.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>
