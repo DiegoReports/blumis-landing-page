@@ -107,5 +107,8 @@ ScrollReveal({
 #about .content,
 #testimonials,
 #testimonials header,
-#testimonials .content
+#testimonials .content,
+#contact,
+#contact #col-a,
+#contact #col-b
 `)

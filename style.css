@@ -550,6 +550,10 @@ body.menu-mobile button path {
   color: var(--paragraph);
 }
 
+#contact .wrapper img {
+  border-radius: 2rem;
+}
+
 /*=========== FOOTER ============= */
 footer {
   background-color: var(--primary-color);
