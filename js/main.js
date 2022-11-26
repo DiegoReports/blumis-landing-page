@@ -101,7 +101,6 @@ ScrollReveal({
 #services .card,
 #products,
 #products header,
-#my-Newslider,
 #products .content p,
 #about,
 #about header,
