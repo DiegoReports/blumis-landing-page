@@ -359,7 +359,6 @@ body.menu-mobile button path {
   line-height: 130%;
 
   margin-bottom: .4rem;
-
 }
 
 #home .stats h3 {
@@ -373,9 +372,15 @@ body.menu-mobile button path {
   line-height: 150%;
 }
 
+#home .stat #express {
+  width: 6rem;
+  height: 11rem;
+}
+
 
 
 /*=========== SERVICES ============= */
+
 
 #services header h2 {
   margin-bottom: 6rem;
