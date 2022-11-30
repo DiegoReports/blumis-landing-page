@@ -513,7 +513,7 @@ p.ism-badge a.ism-link:hover {
 }
 
 #my-Newslider .ism-radios label {
-  width: 60px;
+  width: 45px;
   height: 32px;
   border-radius: 3px;
   color: #fff;
@@ -521,30 +521,60 @@ p.ism-badge a.ism-link:hover {
 }
 
 #my-Newslider .ism-radios li.ism-radio-0 label {
-  background-image: url(./assets/images/antonela-2.jpg);
+  background-image: url(./assets/images/conjunto-sarah-blumis-01.png);
   background-size: cover;
 }
 
 #my-Newslider .ism-radios li.ism-radio-1 label {
-  background-image: url(./assets/images/antonela-1.png);
+  background-image: url(./assets/images/saia-sara-blumis.png);
   background-size: cover;
 
 }
 
 #my-Newslider .ism-radios li.ism-radio-2 label {
-  background-image: url(./assets/images/marcela-preto.png);
+  background-image: url(./assets/images/conjunto-blumis-vermelho-e-branco.png);
   background-size: cover;
 
 }
 
 #my-Newslider .ism-radios li.ism-radio-3 label {
-  background-image: url(./assets/images/marcela-verde.png);
+  background-image: url(./assets/images/conjunto-julia-blumis-04.png);
   background-size: cover;
 
 }
 
 #my-Newslider .ism-radios li.ism-radio-4 label {
-  background-image: url(./assets/images/clarice-vestido.png);
+  background-image: url(./assets/images/vestido-antonella-vinho-blumis.png);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-5 label {
+  background-image: url(./assets/images/vestido-antonella-vinho-blumis-01.png);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-6 label {
+  background-image: url(./assets/images/vestido-antonela-azul-blumis.png);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-7 label {
+  background-image: url(./assets/images/vestido-clarice-blumis-preto.png);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-8 label {
+  background-image: url(./assets/images/vestido-clarice-blumis-01.png);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-9 label {
+  background-image: url(./assets/images/vestido-marcela-vermelho-blumis.png);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-10 label {
+  background-image: url(./assets/images/vestido-marcela-vermelho-blumis-01.png);
   background-size: cover;
 }
 
@@ -616,6 +646,84 @@ p.ism-badge a.ism-link:hover {
 }
 
 #my-Newslider .ism-slide-4 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-5 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-5 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-6 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-6 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-7 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-7 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-8 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-8 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-9 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-9 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-10 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-10 .ism-img {
   height: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
