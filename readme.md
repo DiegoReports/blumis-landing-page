@@ -15,8 +15,8 @@ Landing page desenvolvida para marca Blumis, para exposição da marca e produto
 
 ## 🖊️ Referências:
 
-- NLW - Return (Mission Origin) [**[Rocketseat](https://rocketseat.com.br/)**]
-- Curso: Dominando CSS3 com Sass [**[Hcode Treinamentos](https://hcode.com.br/cursos/css-3)**]
+- NLW - **Return (Mission Origin)** [**[Rocketseat](https://rocketseat.com.br/)**]
+- Curso: **Dominando CSS3 com Sass** [**[Hcode Treinamentos](https://hcode.com.br/cursos/css-3)**]
 - Libraries:
 
     - **Scroll Reveal** - Biblioteca JavaScript para animar elementos à medida que eles ***rolam*** para exibição]
