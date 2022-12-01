@@ -27,3 +27,4 @@ Landing page desenvolvida para marca Blumis, para exposição da marca e produto
 A autoria do projeto é própria. As personalizações foram feitas de acordo com alinhamento de expectativas com a cliente **[Blumis](https://www.blumis.com.br/)**. As expectativas do projeto foram atendidas e até mesmo superadas. Graças aos conhecimento obtidos nas referências citadas e muito esforço e disciplina o projeto pode ser concretizado. Possíveis melhorias serão feitas ao decorrer do tempo.
 
 ## 📱 Visualizar:
+https://www.blumis.com.br/novidades-blumis/
