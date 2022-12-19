@@ -521,65 +521,73 @@ p.ism-badge a.ism-link:hover {
 }
 
 #my-Newslider .ism-radios li.ism-radio-0 label {
-  background-image: url(./assets/images/conjunto-sarah-blumis-01.png);
+  background-image: url(./assets/images/Conversoes/conjunto-sarah-blumis-01.webp);
   background-size: cover;
 }
 
 #my-Newslider .ism-radios li.ism-radio-1 label {
-  background-image: url(./assets/images/saia-sara-blumis.png);
+  background-image: url(./assets/images/Conversoes/saia-sara-blumis.webp);
   background-size: cover;
 
 }
 
 #my-Newslider .ism-radios li.ism-radio-2 label {
-  background-image: url(./assets/images/conjunto-blumis-vermelho-e-branco.png);
+  background-image: url(./assets/images/Conversoes/conjunto-blumis-vermelho-e-branco.webp);
   background-size: cover;
 
 }
 
 #my-Newslider .ism-radios li.ism-radio-3 label {
-  background-image: url(./assets/images/conjunto-julia-blumis-04.png);
+  background-image: url(./assets/images/Conversoes/conjunto-julia-blumis-04.webp);
   background-size: cover;
 
 }
 
 #my-Newslider .ism-radios li.ism-radio-4 label {
-  background-image: url(./assets/images/vestido-antonella-vinho-blumis.png);
+  background-image: url(./assets/images/Conversoes/vestido-antonella-vinho-blumis.webp);
   background-size: cover;
 }
 
 #my-Newslider .ism-radios li.ism-radio-5 label {
-  background-image: url(./assets/images/vestido-antonella-vinho-blumis-01.png);
+  background-image: url(./assets/images/Conversoes/vestido-antonella-vinho-blumis-01.webp);
   background-size: cover;
 }
 
 #my-Newslider .ism-radios li.ism-radio-6 label {
-  background-image: url(./assets/images/vestido-antonela-azul-blumis.png);
+  background-image: url(./assets/images/Conversoes/vestido-antonela-azul-blumis.webp);
   background-size: cover;
 }
 
 #my-Newslider .ism-radios li.ism-radio-7 label {
-  background-image: url(./assets/images/vestido-clarice-blumis-preto.png);
+  background-image: url(./assets/images/Conversoes/vestido-clarice-blumis-preto.webp);
   background-size: cover;
 }
 
 #my-Newslider .ism-radios li.ism-radio-8 label {
-  background-image: url(./assets/images/vestido-clarice-blumis-01.png);
+  background-image: url(./assets/images/Conversoes/vestido-clarice-blumis-01.webp);
   background-size: cover;
 }
 
 #my-Newslider .ism-radios li.ism-radio-9 label {
-  background-image: url(./assets/images/vestido-marcela-vermelho-blumis.png);
+  background-image: url(./assets/images/Conversoes/vestido-marcela-vermelho-blumis.webp);
   background-size: cover;
 }
 
 #my-Newslider .ism-radios li.ism-radio-10 label {
-  background-image: url(./assets/images/vestido-marcela-vermelho-blumis-01.png);
+  background-image: url(./assets/images/Conversoes/vestido-marcela-vermelho-blumis-01.webp);
   background-size: cover;
 }
 
 #my-Newslider .ism-radios li.active label {
   background-color: rgba(0, 0, 0, 1.0);
+}
+
+#my-Newslider .ism-radios li {
+  filter: brightness(50%);
+}
+
+#my-Newslider .ism-radios li.active {
+  filter: brightness(100%);
 }
 
 #my-Newslider .ism-radios label:hover {
