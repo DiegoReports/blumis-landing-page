@@ -460,7 +460,7 @@ p.ism-badge a.ism-link:hover {
   margin-top: -50px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 #my-Newslider .ism-button-prev {

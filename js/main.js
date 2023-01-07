@@ -110,5 +110,6 @@ ScrollReveal({
 #testimonials .content,
 #contact,
 #contact #col-a,
-#contact #col-b
+#contact #col-b,
+#contact .box
 `)
