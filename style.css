@@ -704,6 +704,9 @@ body.menu-mobile button path {
 #contact .inputBox input:valid~i,
 #contact .inputBox input:focus~i {
   height: 4.4rem;
+}
+
+#contact .inputBox input:focus {
   color: #fff;
 }
 
