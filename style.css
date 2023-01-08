@@ -584,10 +584,11 @@ body.menu-mobile button path {
 #contact .box {
   position: relative;
   width: 38rem;
-  height: 52rem;
+  height: 62rem;
   background: #1c1c1c;
   border-radius: .8rem;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 #contact .box::before {
@@ -657,7 +658,8 @@ body.menu-mobile button path {
   margin-top: 2.5rem;
 }
 
-#contact input {
+#contact input,
+#contact textarea {
   position: relative;
   width: 100%;
   padding: 2rem 1rem 1rem;
@@ -682,7 +684,8 @@ body.menu-mobile button path {
 }
 
 #contact .inputBox input:valid~span,
-#contact .inputBox input:focus~span {
+#contact .inputBox input:focus~span,
+#contact .inputBox textarea~span {
   color: var(--primary-color);
   transform: translateX(0) translateY(-3.4rem);
   font-size: 0.75em;
@@ -706,7 +709,22 @@ body.menu-mobile button path {
   height: 4.4rem;
 }
 
-#contact .inputBox input:focus {
+#contact .inputBox textarea~i {
+  height: 11.4rem;
+}
+
+/* Cor de fundo do autocomplete */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px var(--primary-color) inset;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+  -webkit-text-fill-color: #fff !important;
+}
+
+#contact .inputBox input:focus,
+#contact .inputBox textarea:focus {
   color: #fff;
 }
 
