@@ -573,7 +573,7 @@ body.menu-mobile button path {
   background: -webkit-linear-gradient(90deg, rgba(25, 25, 25, 1) 0%, rgba(51, 51, 51, 0.6110819327731092) 53%, rgba(25, 25, 25, 1) 100%);
   background: linear-gradient(90deg, rgba(25, 25, 25, 1) 0%, rgba(51, 51, 51, 0.6110819327731092) 53%, rgba(25, 25, 25, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#191919", endColorstr="#191919", GradientType=1);
-  z-index: -1;
+  z-index: -2;
 }
 
 #contact h2,
