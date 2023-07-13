@@ -96,6 +96,7 @@ ScrollReveal({
 #home,
 #home img,
 #home .stats,
+#popUp-cookie,
 #services,
 #services header,
 #services .card,

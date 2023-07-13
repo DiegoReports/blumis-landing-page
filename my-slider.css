@@ -578,6 +578,44 @@ p.ism-badge a.ism-link:hover {
   background-size: cover;
 }
 
+
+
+
+#my-Newslider .ism-radios li.ism-radio-11 label {
+  background-image: url(./assets/images/Conversoes/vestido-cris-blumis.webp);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-12 label {
+  background-image: url(./assets/images/Conversoes/vestido-cris-laranja-blumis.webp);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-13 label {
+  background-image: url(./assets/images/Conversoes/vestido-diana-laranja-blumis.webp);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-14 label {
+  background-image: url(./assets/images/Conversoes/vestido-catarine-azul-blumis.webp);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-15 label {
+  background-image: url(./assets/images/Conversoes/vestido-catarine-blumis.webp);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-16 label {
+  background-image: url(./assets/images/Conversoes/vestido-sofia-blumis.webp);
+  background-size: cover;
+}
+
+#my-Newslider .ism-radios li.ism-radio-17 label {
+  background-image: url(./assets/images/Conversoes/vestido-bia-blumis.webp);
+  background-size: cover;
+}
+
 #my-Newslider .ism-radios li.active label {
   background-color: rgba(0, 0, 0, 1.0);
 }
@@ -732,6 +770,97 @@ p.ism-badge a.ism-link:hover {
 }
 
 #my-Newslider .ism-slide-10 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-11 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-11 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-12 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-12 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-13 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-13 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-14 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-14 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-15 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-15 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-16 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-16 .ism-img {
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#my-Newslider .ism-slide-17 .ism-img-frame {
+  height: 100%;
+}
+
+#my-Newslider .ism-slide-17 .ism-img {
   height: 100%;
   left: 50%;
   -webkit-transform: translateX(-50%);
