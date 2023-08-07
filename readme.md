@@ -27,4 +27,4 @@ A autoria do projeto é própria. As personalizações foram feitas de acordo co
 
 ## 📱 Visualizar:
 
-https://www.blumis.com.br/novidades-blumis/
+https://www.blumis.com.br
